@@ -1,0 +1,680 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bento UI - A modern responsive design system and reusable CSS component library.">
+    <meta name="theme-color" content="#f5f5fa">
+    <title>Bento UI — Design System & Component Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- BACKGROUND -->
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <!-- HEADER -->
+    <header class="topbar">
+        <a href="#" class="brand">
+            <span class="brand-symbol">B</span>
+            <span>Bento<span class="brand-light">UI.</span></span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="#overview" class="nav-link active">Overview</a>
+            <a href="#components" class="nav-link">Components</a>
+            <a href="#tokens" class="nav-link">Design Tokens</a>
+        </nav>
+
+        <a href="#components" class="header-button">
+            Explore UI Kit <span>↗</span>
+        </a>
+    </header>
+
+    <main class="container">
+
+        <!-- INTRODUCTION -->
+        <section class="intro" id="overview">
+            <div class="intro-label">
+                <span class="live-dot"></span>
+                VERSION 1.0.0 · DESIGN SYSTEM
+            </div>
+
+            <h1>Beautiful interfaces.<br>
+                <span>Thoughtfully composed.</span>
+            </h1>
+
+            <p>
+                A modern Bento-inspired design system built for
+                clarity, consistency and beautiful digital experiences.
+                Explore reusable components, interactive controls and
+                a flexible visual language.
+            </p>
+
+            <div class="intro-actions">
+                <a href="#components" class="button-primary">
+                    Explore Components <span>→</span>
+                </a>
+                <a href="#tokens" class="button-secondary">
+                    Design Principles
+                </a>
+            </div>
+
+            <div class="intro-meta">
+                <span>✦ 100% CSS powered interactions</span>
+                <span>✦ Responsive by design</span>
+                <span>✦ Zero dependencies</span>
+            </div>
+        </section>
+
+        <!-- BENTO DASHBOARD -->
+        <section class="section-heading">
+            <div>
+                <span class="section-eyebrow">01 / DASHBOARD</span>
+                <h2>The Bento Experience</h2>
+                <p>A collection of modular interface elements.</p>
+            </div>
+
+            <span class="version-pill">LIVE PREVIEW</span>
+        </section>
+
+        <section class="bento-grid">
+
+            <!-- WEATHER CARD -->
+            <article class="bento-card weather-card">
+                <div class="card-top">
+                    <div>
+                        <span class="card-label">ENVIRONMENT</span>
+                        <h3>Weather Overview</h3>
+                    </div>
+                    <span class="card-icon">☀</span>
+                </div>
+
+                <div class="weather-main">
+                    <span class="weather-symbol">☀️</span>
+                    <div>
+                        <strong>28°</strong>
+                        <span>Sunny skies</span>
+                    </div>
+                </div>
+
+                <p class="weather-location">Nairobi, Kenya · Demo data</p>
+
+                <div class="weather-details">
+                    <div>
+                        <span>Humidity</span>
+                        <strong>54%</strong>
+                    </div>
+                    <div>
+                        <span>Wind</span>
+                        <strong>12 km/h</strong>
+                    </div>
+                    <div>
+                        <span>UV Index</span>
+                        <strong>Moderate</strong>
+                    </div>
+                </div>
+            </article>
+
+            <!-- ANALYTICS CARD -->
+            <article class="bento-card analytics-card">
+                <div class="card-top">
+                    <div>
+                        <span class="card-label">PERFORMANCE</span>
+                        <h3>Weekly Activity</h3>
+                    </div>
+                    <span class="mini-badge">+18.6%</span>
+                </div>
+
+                <div class="analytics-number">
+                    <strong>8,492</strong>
+                    <span>Interactions this week</span>
+                </div>
+
+                <div class="chart">
+                    <div class="chart-column">
+                        <span style="height: 45%"></span>
+                        <small>MON</small>
+                    </div>
+                    <div class="chart-column">
+                        <span style="height: 68%"></span>
+                        <small>TUE</small>
+                    </div>
+                    <div class="chart-column">
+                        <span style="height: 53%"></span>
+                        <small>WED</small>
+                    </div>
+                    <div class="chart-column">
+                        <span style="height: 85%"></span>
+                        <small>THU</small>
+                    </div>
+                    <div class="chart-column">
+                        <span style="height: 72%"></span>
+                        <small>FRI</small>
+                    </div>
+                    <div class="chart-column">
+                        <span style="height: 96%"></span>
+                        <small>SAT</small>
+                    </div>
+                    <div class="chart-column">
+                        <span style="height: 61%"></span>
+                        <small>SUN</small>
+                    </div>
+                </div>
+            </article>
+
+            <!-- MUSIC PLAYER -->
+            <article class="bento-card music-card">
+                <div class="card-top">
+                    <div>
+                        <span class="card-label">AUDIO EXPERIENCE</span>
+                        <h3>Music Player</h3>
+                    </div>
+                    <span class="card-icon">♫</span>
+                </div>
+
+                <div class="album-art">
+                    <div class="album-orbit"></div>
+                    <div class="album-center">B</div>
+                </div>
+
+                <div class="music-info">
+                    <strong>Midnight Dreams</strong>
+                    <span>Creative Sessions · Demo track</span>
+                </div>
+
+                <div class="music-progress">
+                    <span></span>
+                </div>
+
+                <div class="music-timing">
+                    <span>01:24</span>
+                    <span>03:42</span>
+                </div>
+
+                <div class="music-controls" aria-label="Decorative music controls">
+                    <span>↶</span>
+                    <span class="play-button">▶</span>
+                    <span>↷</span>
+                </div>
+
+                <p class="demo-note">Visual player preview · No audio playback</p>
+            </article>
+
+            <!-- STORAGE -->
+            <article class="bento-card storage-card">
+                <div class="card-top">
+                    <div>
+                        <span class="card-label">SYSTEM STATUS</span>
+                        <h3>Storage Overview</h3>
+                    </div>
+                    <span class="card-icon">▤</span>
+                </div>
+
+                <div class="storage-visual">
+                    <div class="storage-ring">
+                        <div class="storage-ring-inner">
+                            <strong>72%</strong>
+                            <span>Used</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="storage-summary">
+                    <strong>72.4 GB</strong>
+                    <span>of 100 GB available capacity</span>
+                </div>
+
+                <div class="storage-breakdown">
+                    <div><span class="dot purple"></span> Projects <strong>35 GB</strong></div>
+                    <div><span class="dot blue"></span> Media <strong>22 GB</strong></div>
+                    <div><span class="dot orange"></span> Other <strong>15.4 GB</strong></div>
+                </div>
+            </article>
+
+            <!-- HEATMAP -->
+            <article class="bento-card heatmap-card">
+                <div class="card-top">
+                    <div>
+                        <span class="card-label">CONSISTENCY</span>
+                        <h3>Activity Heatmap</h3>
+                    </div>
+                    <span class="mini-badge">2026</span>
+                </div>
+
+                <p class="heatmap-description">
+                    A visual representation of daily activity.
+                </p>
+
+                <div class="heatmap">
+                    <div class="heat-column">
+                        <i></i><i class="level-one"></i><i class="level-two"></i><i></i><i class="level-three"></i><i class="level-one"></i><i class="level-two"></i>
+                    </div>
+                    <div class="heat-column">
+                        <i class="level-one"></i><i class="level-two"></i><i></i><i class="level-three"></i><i class="level-two"></i><i></i><i class="level-one"></i>
+                    </div>
+                    <div class="heat-column">
+                        <i class="level-two"></i><i></i><i class="level-one"></i><i class="level-three"></i><i class="level-three"></i><i class="level-two"></i><i></i>
+                    </div>
+                    <div class="heat-column">
+                        <i></i><i class="level-three"></i><i class="level-two"></i><i class="level-one"></i><i></i><i class="level-two"></i><i class="level-three"></i>
+                    </div>
+                    <div class="heat-column">
+                        <i class="level-one"></i><i class="level-two"></i><i class="level-three"></i><i></i><i class="level-two"></i><i class="level-one"></i><i class="level-three"></i>
+                    </div>
+                    <div class="heat-column">
+                        <i class="level-three"></i><i></i><i class="level-two"></i><i class="level-one"></i><i class="level-three"></i><i class="level-two"></i><i></i>
+                    </div>
+                    <div class="heat-column">
+                        <i></i><i class="level-one"></i><i class="level-three"></i><i class="level-two"></i><i></i><i class="level-three"></i><i class="level-one"></i>
+                    </div>
+                    <div class="heat-column">
+                        <i class="level-two"></i><i class="level-three"></i><i></i><i class="level-one"></i><i class="level-two"></i><i class="level-three"></i><i></i>
+                    </div>
+                    <div class="heat-column">
+                        <i class="level-one"></i><i></i><i class="level-two"></i><i class="level-three"></i><i class="level-one"></i><i></i><i class="level-two"></i>
+                    </div>
+                    <div class="heat-column">
+                        <i class="level-three"></i><i class="level-two"></i><i class="level-one"></i><i></i><i class="level-three"></i><i class="level-two"></i><i class="level-one"></i>
+                    </div>
+                    <div class="heat-column">
+                        <i></i><i class="level-two"></i><i class="level-three"></i><i class="level-one"></i><i></i><i class="level-three"></i><i class="level-two"></i>
+                    </div>
+                    <div class="heat-column">
+                        <i class="level-one"></i><i class="level-three"></i><i></i><i class="level-two"></i><i class="level-three"></i><i class="level-one"></i><i></i>
+                    </div>
+                </div>
+
+                <div class="heatmap-legend">
+                    <span>Less</span>
+                    <i></i><i class="level-one"></i><i class="level-two"></i><i class="level-three"></i>
+                    <span>More</span>
+                </div>
+            </article>
+
+            <!-- QUICK METRICS -->
+            <article class="bento-card metrics-card">
+                <span class="card-label">DESIGN SYSTEM METRICS</span>
+                <div class="metric-list">
+                    <div>
+                        <strong>24+</strong>
+                        <span>UI patterns</span>
+                    </div>
+                    <div>
+                        <strong>100%</strong>
+                        <span>Responsive layout</span>
+                    </div>
+                    <div>
+                        <strong>0</strong>
+                        <span>External dependencies</span>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- COMPONENT LIBRARY -->
+        <section class="components-section" id="components">
+
+            <div class="section-heading component-heading">
+                <div>
+                    <span class="section-eyebrow">02 / COMPONENT SANDBOX</span>
+                    <h2>Built to be reused.</h2>
+                    <p>Explore the component library and its interactive states.</p>
+                </div>
+                <span class="version-pill">COMPONENT KIT</span>
+            </div>
+
+            <!-- BUTTONS -->
+            <article class="showcase-card">
+                <div class="showcase-header">
+                    <div>
+                        <span class="card-label">COMPONENT 01</span>
+                        <h3>Buttons & Actions</h3>
+                        <p>Different visual styles for interface actions.</p>
+                    </div>
+                    <span class="component-number">01</span>
+                </div>
+
+                <div class="component-demo button-demo">
+                    <button class="ui-button primary-ui">Primary Action</button>
+                    <button class="ui-button secondary-ui">Secondary</button>
+                    <button class="ui-button outline-ui">Outline</button>
+                    <button class="ui-button dark-ui">Dark Button</button>
+                    <button class="ui-button primary-ui" disabled>Disabled</button>
+                </div>
+            </article>
+
+            <!-- BADGES -->
+            <article class="showcase-card">
+                <div class="showcase-header">
+                    <div>
+                        <span class="card-label">COMPONENT 02</span>
+                        <h3>Glassmorphic Badges</h3>
+                        <p>Compact indicators for statuses and categories.</p>
+                    </div>
+                    <span class="component-number">02</span>
+                </div>
+
+                <div class="component-demo">
+                    <span class="badge-ui badge-success">● Active</span>
+                    <span class="badge-ui badge-warning">◷ Pending</span>
+                    <span class="badge-ui badge-danger">● Error</span>
+                    <span class="badge-ui badge-purple">✦ Premium</span>
+                    <span class="badge-ui badge-neutral">Default</span>
+                </div>
+            </article>
+
+            <!-- SWITCHES -->
+            <article class="showcase-card">
+                <div class="showcase-header">
+                    <div>
+                        <span class="card-label">COMPONENT 03</span>
+                        <h3>Switch Toggles</h3>
+                        <p>CSS-styled native checkbox controls.</p>
+                    </div>
+                    <span class="component-number">03</span>
+                </div>
+
+                <div class="component-demo switch-list">
+                    <label class="switch-row">
+                        <span>
+                            <strong>Dark mode</strong>
+                            <small>Enable a darker appearance</small>
+                        </span>
+                        <input type="checkbox" class="switch-input" checked>
+                        <span class="switch-track"></span>
+                    </label>
+
+                    <label class="switch-row">
+                        <span>
+                            <strong>Notifications</strong>
+                            <small>Receive interface notifications</small>
+                        </span>
+                        <input type="checkbox" class="switch-input">
+                        <span class="switch-track"></span>
+                    </label>
+
+                    <label class="switch-row">
+                        <span>
+                            <strong>Auto-save</strong>
+                            <small>Save changes automatically</small>
+                        </span>
+                        <input type="checkbox" class="switch-input" checked>
+                        <span class="switch-track"></span>
+                    </label>
+                </div>
+            </article>
+
+            <!-- SLIDERS -->
+            <article class="showcase-card">
+                <div class="showcase-header">
+                    <div>
+                        <span class="card-label">COMPONENT 04</span>
+                        <h3>Range Controls</h3>
+                        <p>Custom-styled native range inputs.</p>
+                    </div>
+                    <span class="component-number">04</span>
+                </div>
+
+                <div class="component-demo slider-demo">
+                    <label for="volume">Volume <strong>75%</strong></label>
+                    <input type="range" id="volume" min="0" max="100" value="75">
+
+                    <label for="brightness">Brightness <strong>45%</strong></label>
+                    <input type="range" id="brightness" min="0" max="100" value="45">
+
+                    <label for="progress">Progress <strong>90%</strong></label>
+                    <input type="range" id="progress" min="0" max="100" value="90">
+                </div>
+            </article>
+
+            <!-- ACCORDIONS -->
+            <article class="showcase-card">
+                <div class="showcase-header">
+                    <div>
+                        <span class="card-label">COMPONENT 05</span>
+                        <h3>Expandable Accordions</h3>
+                        <p>Native HTML details and summary elements.</p>
+                    </div>
+                    <span class="component-number">05</span>
+                </div>
+
+                <div class="accordion-list">
+                    <details class="accordion" open>
+                        <summary>What is Bento UI?</summary>
+                        <p>
+                            Bento UI is a modern component library built
+                            using HTML5 and CSS3, demonstrating reusable
+                            design patterns and responsive layouts.
+                        </p>
+                    </details>
+
+                    <details class="accordion">
+                        <summary>Does it require JavaScript?</summary>
+                        <p>
+                            The included interactions use native browser
+                            controls and CSS. No JavaScript is required
+                            for the demonstrated components.
+                        </p>
+                    </details>
+
+                    <details class="accordion">
+                        <summary>Can I customise the components?</summary>
+                        <p>
+                            Yes. Colours, spacing, borders, typography
+                            and component states are managed through
+                            reusable CSS variables and component classes.
+                        </p>
+                    </details>
+                </div>
+            </article>
+
+            <!-- SKELETONS -->
+            <article class="showcase-card">
+                <div class="showcase-header">
+                    <div>
+                        <span class="card-label">COMPONENT 06</span>
+                        <h3>Loading Skeletons</h3>
+                        <p>Placeholder elements for loading interfaces.</p>
+                    </div>
+                    <span class="component-number">06</span>
+                </div>
+
+                <div class="component-demo skeleton-demo">
+                    <div class="skeleton-avatar"></div>
+                    <div class="skeleton-content">
+                        <div class="skeleton-line long"></div>
+                        <div class="skeleton-line medium"></div>
+                        <div class="skeleton-line short"></div>
+                    </div>
+                    <div class="skeleton-square"></div>
+                </div>
+            </article>
+
+            <!-- FORM CONTROLS -->
+            <article class="showcase-card form-showcase">
+                <div class="showcase-header">
+                    <div>
+                        <span class="card-label">COMPONENT 07</span>
+                        <h3>Custom Form Controls</h3>
+                        <p>Accessible native inputs with a modern visual treatment.</p>
+                    </div>
+                    <span class="component-number">07</span>
+                </div>
+
+                <div class="form-grid">
+                    <div class="form-field">
+                        <label for="full-name">Full name</label>
+                        <input type="text" id="full-name" placeholder="Enter your name">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">Email address</label>
+                        <input type="email" id="email" placeholder="hello@example.com">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="role">Select role</label>
+                        <select id="role">
+                            <option value="">Choose a role</option>
+                            <option>Designer</option>
+                            <option>Developer</option>
+                            <option>Product Manager</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="upload">Upload a file</label>
+                        <input type="file" id="upload">
+                    </div>
+
+                    <div class="form-field full-width">
+                        <span class="field-label">Preferred theme</span>
+                        <div class="radio-group">
+                            <label><input type="radio" name="theme" checked> Light</label>
+                            <label><input type="radio" name="theme"> Dark</label>
+                            <label><input type="radio" name="theme"> System</label>
+                        </div>
+                    </div>
+
+                    <div class="form-field full-width">
+                        <label class="checkbox-row">
+                            <input type="checkbox" checked>
+                            <span>I agree to the design system guidelines.</span>
+                        </label>
+                    </div>
+
+                    <div class="form-field full-width">
+                        <button type="button" class="ui-button primary-ui submit-demo">
+                            Save Preferences →
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- STATE MATRIX -->
+            <article class="showcase-card state-showcase">
+                <div class="showcase-header">
+                    <div>
+                        <span class="card-label">COMPONENT 08</span>
+                        <h3>Component State Matrix</h3>
+                        <p>Visual reference for common interaction states.</p>
+                    </div>
+                    <span class="component-number">08</span>
+                </div>
+
+                <div class="state-matrix">
+                    <div class="state-cell">
+                        <span>DEFAULT</span>
+                        <button class="ui-button secondary-ui">Button</button>
+                    </div>
+                    <div class="state-cell">
+                        <span>HOVER</span>
+                        <button class="ui-button hover-demo">Button</button>
+                    </div>
+                    <div class="state-cell">
+                        <span>FOCUS</span>
+                        <button class="ui-button focus-demo">Button</button>
+                    </div>
+                    <div class="state-cell">
+                        <span>DISABLED</span>
+                        <button class="ui-button secondary-ui" disabled>Button</button>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- DESIGN TOKENS -->
+        <section class="tokens-section" id="tokens">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-eyebrow">03 / DESIGN FOUNDATION</span>
+                    <h2>The design language.</h2>
+                    <p>Reusable visual tokens for a consistent interface.</p>
+                </div>
+            </div>
+
+            <div class="token-grid">
+
+                <article class="token-card">
+                    <span class="card-label">COLOUR PALETTE</span>
+                    <h3>Core colours</h3>
+
+                    <div class="color-swatches">
+                        <div><i class="swatch swatch-primary"></i><span>Primary<br>#7055F5</span></div>
+                        <div><i class="swatch swatch-dark"></i><span>Dark<br>#181729</span></div>
+                        <div><i class="swatch swatch-soft"></i><span>Surface<br>#FFFFFF</span></div>
+                        <div><i class="swatch swatch-accent"></i><span>Accent<br>#B9A7FF</span></div>
+                    </div>
+                </article>
+
+                <article class="token-card">
+                    <span class="card-label">SPACING SYSTEM</span>
+                    <h3>Consistent spacing</h3>
+
+                    <div class="spacing-list">
+                        <div><span>XS</span><i style="width: 8px"></i><strong>8px</strong></div>
+                        <div><span>SM</span><i style="width: 16px"></i><strong>16px</strong></div>
+                        <div><span>MD</span><i style="width: 24px"></i><strong>24px</strong></div>
+                        <div><span>LG</span><i style="width: 32px"></i><strong>32px</strong></div>
+                        <div><span>XL</span><i style="width: 48px"></i><strong>48px</strong></div>
+                    </div>
+                </article>
+
+                <article class="token-card">
+                    <span class="card-label">BORDER RADIUS</span>
+                    <h3>Shape language</h3>
+
+                    <div class="radius-list">
+                        <div><i class="radius-small"></i><span>Small · 8px</span></div>
+                        <div><i class="radius-medium"></i><span>Medium · 16px</span></div>
+                        <div><i class="radius-large"></i><span>Large · 24px</span></div>
+                    </div>
+                </article>
+
+                <article class="token-card">
+                    <span class="card-label">TYPOGRAPHY</span>
+                    <h3>Type hierarchy</h3>
+                    <div class="type-preview">
+                        <strong>Ag</strong>
+                        <div>
+                            <b>Inter / System UI</b>
+                            <span>Modern sans-serif typography</span>
+                            <span>Bold · Medium · Regular</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <a href="#" class="brand footer-brand">
+                <span class="brand-symbol">B</span>
+                Bento<span class="brand-light">UI.</span>
+            </a>
+
+            <p>A thoughtful design system for modern digital experiences.</p>
+
+            <div class="footer-links">
+                <a href="#overview">Overview</a>
+                <a href="#components">Components</a>
+                <a href="#tokens">Design Tokens</a>
+            </div>
+
+            <span class="copyright">
+                © 2026 Stephen Oyugi. Crafted with HTML5 & CSS3.
+            </span>
+        </footer>
+
+    </main>
+
+</body>
+</html>
